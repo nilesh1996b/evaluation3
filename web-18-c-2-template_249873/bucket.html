@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+            img{
+        width: 200px;
+        height: 150px;
+      }
+
+      #bucket{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        width: 80%;
+        margin: auto;
+        padding-left: 130px;
+        margin-top: 30px;
+      }
+
+      a {
+        color: azure;
+        text-decoration: none;
+        font-size: larger;
+      }
+
+      #confirm_checkout{
+        margin-top: 20px;
+        background-color: rgb(42, 15, 15);
+        height: 60px;
+        width: 200px;
+
+      }
+
+      h3{
+        display: inline;
+      }
+
+      #total_amount{
+        color: rgb(67, 67, 67);
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+
+
+
+  <body>
+    <div id="total-div">
+      <h3>Total Amount : -</h3>
+      <h3 id="total_amount">
+        
+      </h3>
+    </div>
+    <div id="bucket">
+      <!--Show all coffee added to bucket here-->
+      <!-- add an remove button to each coffee so that you can remove that item from bucket, give the button HTML id as 'remove_coffee' -->
+    </div>
+
+    <center> <button id="confirm_checkout"><a href="checkout.html">Checkout</a></button></center>
+  </body>
+</html>
+
+<script src="scripts\bucket.js"></script>
